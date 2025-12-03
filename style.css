@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --caramleo: #9D5431;
+    --neve: #F6EDDE;
+    --marrom: #371C13;
+    --caramelo_claro: #D49A63;
+    --fundo_site: #fff;
+    --preto: #000;
+    --cor01: #FBF7F1;
+    --cor02: #EAD1B0;
+    --cor03: #E1BC90;
+    --cor04: #CB7F44;
+    --cor05: #BD6A39;
+    --cor06: #663A28;
+}
+
+body{
+    background-color: var(--fundo_site);
+}
+
+/* HEADER======================================================================= */
+header>.div.container-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.div.container-flex{
+    width: 85%;
+    max-width: 1440px;
+}
+
+.banner01{
+    width: 100%;
+    height: 1080px;
+    background-image: url(./ims/banner\ ateliê\ 01\ copiar.png\ ofc.png);
+    background-size: cover;
+    background-position: center;
+}
