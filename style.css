@@ -24,16 +24,22 @@ body{
 }
 
 /* HEADER======================================================================= */
+header{
+    width: 100%;
+    background-color: #9D5431;
+}
+
 header>.div.container-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    height: 165px;
 }
 
-.div.container-flex{
+.container-flex{
     width: 85%;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .banner01{
@@ -42,4 +48,28 @@ header>.div.container-flex{
     background-image: url(./ims/banner\ ateliê\ 01\ copiar.png\ ofc.png);
     background-size: cover;
     background-position: center;
+    margin-top: 80px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+
+.links a {
+    font-size: 40px;
+    color: var(--neve);
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: var(--cor03);
+    border-bottom: 1px solid var(--cor03);
+}
+
+#icone-barras,
+#icone-x,
+#menu_botao{
+    display: none;
 }
