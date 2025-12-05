@@ -1,10 +1,13 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Bell MT", bold;
+    font-family: "Bell MT", regular;
+    font-family: "Eshira", regular;
 }
 
-:root{
+:root {
     --caramleo: #9D5431;
     --neve: #F6EDDE;
     --marrom: #371C13;
@@ -19,30 +22,48 @@
     --cor06: #663A28;
 }
 
-body{
+@font-face {
+    font-family: Bell MT;
+    src: url(./fontes/bell-mt.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Bell MT, bold;
+    src: url(./fontes/Bell\ MT\ Bold.otf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: Eshira;
+    src: url(./fontes/eshira.ttf);
+    font-weight: 400;
+}
+
+body {
     background-color: var(--fundo_site);
 }
 
 /* HEADER======================================================================= */
-header{
+header {
     width: 100%;
     background-color: #9D5431;
 }
 
-header>.div.container-flex{
+header>.div.container-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 165px;
 }
 
-.container-flex{
+.container-flex {
     width: 85%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.banner01{
+.banner01 {
     width: 100%;
     height: 1080px;
     background-image: url(./ims/banner\ ateliê\ 01\ copiar.png\ ofc.png);
@@ -51,7 +72,7 @@ header>.div.container-flex{
     margin-top: 80px;
 }
 
-.links{
+.links {
     display: flex;
     align-items: center;
     gap: 85px;
@@ -63,13 +84,53 @@ header>.div.container-flex{
     text-decoration: none;
 }
 
-.links a:hover{
+.links a:hover {
     color: var(--cor03);
     border-bottom: 1px solid var(--cor03);
 }
 
 #icone-barras,
 #icone-x,
-#menu_botao{
+#menu_botao {
     display: none;
+}
+
+.Sobre-Nós{
+    flex-direction: column;
+    text-align: center;
+}
+
+.Sobre-Nós img {
+    width: 30%;
+    border-radius: 40px;
+    height: 600px;
+    margin: 360px;
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Sobre-Nós h2 {
+    font-size: 70px;
+    font-family: Bell MT, Bold;
+    color: #9D5431;
+    margin-top: 5%;
+    margin: 20px;
+}
+
+.Sobre-Nós p {
+    font-size: 30px;
+    font-family: Bell MT, regular;
+    color: #000;
+}
+
+.Roda-pe{
+    background-color: #371C13;
+    font-family: Bell MT;
+    font-size: 30px;
+    color: var(--neve);
+}
+
+.redes-sociais img{
+    height: 60px;
 }
