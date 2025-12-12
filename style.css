@@ -114,7 +114,8 @@ header>.div.container-flex {
     text-align: center;
     padding: 60px 0;
     display: flex;
-    gap: 6%;
+    margin-right: 600px;
+
 }
 
 .Sobre-Nós h2{
@@ -122,6 +123,7 @@ header>.div.container-flex {
     font-family: Bell Mt, bold;
     color: var(--caramleo);
     margin-bottom: 30px;
+    margin-left: 160px;
 }
 
 .Sobre-Nós img{
@@ -129,12 +131,15 @@ header>.div.container-flex {
     border-radius: 40px;
     margin-bottom: 40px;
     box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    /* margin-right: 50px; */
+    margin-left: 370px;
 }
 
 .Sobre-Nós p{
     font-size: 30px;
     font-family: Bell MT, regular;
     color: #000;
+    margin-left: 200px;
 }
 
 /* Pacotes====================================================================================================== */
@@ -174,12 +179,16 @@ header>.div.container-flex {
 /* Nossa Loja =====================================================================================================*/
 
 #corpo{
-  grid-template-columns: 1fr 1fr; 
-  gap: 40px;
-  align-items: start;
   width: 80%;
   margin: 0 auto;
   padding: 60px 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.texto-loja{
+    width: 50%;
 }
 
 .Loja h2{
@@ -198,11 +207,22 @@ header>.div.container-flex {
     color: #9D5431;
 }
 
-.Loja p{
+.Loja ul{
     font-family: Bell MT;
     font-size: 25px;
     color: #000;
 
+    list-style: none;
+}
+#mapa{
+    position: relative;
+}
+
+#mapa iframe{
+    width: 500px;
+    height: 250px;
+    border: none;
+    border-radius: 35px;
 }
 
 /* Footer */
@@ -239,6 +259,9 @@ footer{
 
 .footer-social ul li{
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .footer-social img{
     height: 30px;
