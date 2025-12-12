@@ -10,22 +10,39 @@
     <script src="./scrip.js" defer></script>
 
     <!-- icone na guia de endereco -->
-    <link rel="shortcut icon" href="./ims/Vertical ofc.svg">
+    <link rel="shortcut icon" href="./ims/Vertical c Fundo.svg">
 </head>
 
 <body>
-    <header>
+    <main>
+        <div id="sombra"></div>
+        <header>
 
-        <div class="container-flex">
-            <nav id="menu" class="links">
-                <a href="#Sobre Nós">Sobre Nós</a>
-                <a href="#Pacotes de Aulas">Pacotes de Aulas</a>
-                <a href="#Nossos Produtos">Nossos Produtos</a>
-                <a href="#Nossa Loja">Nossa Loja</a>
-                <a href="#Contato">Contato</a>
-            </nav>
+            <div class="container-flex container-header">
+                <img id="Logo" src="./ims/Logo Branca s Fundo.svg" alt="Logo">
+                <nav id="menu" class="links">
+                    <a href="#Sobre Nós">Sobre Nós</a>
+                    <a href="#Pacotes de Aulas">Pacotes de Aulas</a>
+                    <a href="#Nossos Produtos">Nossos Produtos</a>
+                    <a href="#Nossa Loja">Nossa Loja</a>
+                    <a href="#Contato">Contato</a>
+                </nav>
 
-            <button id="menu_botao" type="button">
+                <!-- Menu de Hamburguer-->
+                <button id="menu_botao" onclick="abreFechaMenu()">
+                    <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path
+                            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                    </svg>
+
+                    <svg id="icone-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path
+                            d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
+                    </svg>
+                </button>
+
+
+                <!-- <button id="menu_botao" type="button">
                 <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                     <path
                         d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
@@ -35,62 +52,114 @@
                     <path
                         d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
                 </svg>
-            </button>
+            </button> -->
 
-        </div>
-
-        <div class="banner01"></div>
-    </header>
-
-
-    <section class="Sobre-Nós">
-
-        <div class="texto-sobre">
-            <h2>Sobre Nós</h2>
-            <p>
-                Uma escola que se iniciou com
-                o movimento de músicos e
-                professores, onde os mesmos
-                queriam um lugar onde fosse
-                possível passar seus
-                conhecimentos de forma
-                acessível e com metodologia
-                pratica, com a junção de vender
-                e fornecer qualidade no trabalho.
-            </p>
-        </div>
-
-        <div id="img-sobre">
-            <img src="./ims/IMG_3891.jpg" alt="">
-        </div>
-
-    </section>
-
-    <main>
-    </main>
-    <section id="Roda-pe">
-
-            <div class="redes-sociais">
-                <ul>
-                    <div class="email">
-                        <img src="./ims/email.png" alt="icone de e-mail">
-                        ateliedosom.oficial@gmail.com
-                    </div>
-
-                    <div class="insta">
-                        <img src="./ims/instagram.png" alt="icone instagram">
-                        Atelie_do_Som134
-                    </div>
-
-                    <div class="tiktok">
-                        <img src="./ims/tiktok.png" alt="icone tiktok">
-                        ateliedosom.oficial@gmail.com
-                    </div>
-                </ul>
             </div>
-            </ul>
+
+            <div class="banner01"></div>
+        </header>
+
+
+
+        <section class="Sobre-Nós">
+
+            <img src="./ims/IMG_3891.jpg" alt="">
+            <div class="texto-sobre">
+                <h2>Sobre Nós</h2>
+                <p>
+                    Uma escola que se iniciou com
+                    o movimento de músicos e
+                    professores, onde os mesmos
+                    queriam um lugar onde fosse
+                    possível passar seus
+                    conhecimentos de forma
+                    acessível e com metodologia
+                    pratica, com a junção de vender
+                    e fornecer qualidade no trabalho.
+                </p>
+            </div>
+
+
+        </section>
+
+        <section class="Pacotes">
+            <h2>Pacotes de Aulas</h2>
+
+            <div class="banners">
+                <img src="./ims/Banner promocional Ateliê copiar.png" alt="">
+                <img src="./ims/Banner promocional Ateliê 02 copiar.png" alt="">
+                <img src="./ims/Banner promocional Ateliê 03 copiar.png" alt="">
+
             </div>
         </section>
+
+
+        <section class="Produtos">
+            <h2>Nossos Produtos</h2>
+
+            <div class="produtos">
+                <img src="./ims/Produto 01.png" alt="">
+                <img src="./ims/Produto 02.png" alt="">
+                <img src="./ims/Produto 03.png" alt="">
+            </div>
+        </section>
+
+        <section class="Loja">
+            <h2>Nossa Loja</h2>
+            <div id="corpo">
+
+                <div id="texto-loja"></div>
+
+                <h3>Horário de Funcionamento</h3>
+
+                <p>Segunda-Feira 09:00 ás 19:30
+                    Terça-Feira 09:00 ás 19:00
+                    Quarta-Feira 09:00 ás 19:30
+                    Quinta-Feira 08:30 ás 20:00
+                    Sexta-Feira 08:30 ás 20:00
+                    Sabádo 07:00 ás 16:00</p>
+
+                <h3>Estamos localizados bem pertinho
+                    de você: </h3>
+
+                <p>Rua Niterói,180 - São caetano do Sul, SP</p>
+            </div>
+
+            <div id="mapa">
+                <source media="(min-width: )" srcset="">
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <section id="Roda-pe">
+
+
+        <footer>
+            <div class="container-footer">
+                <!-- Logo Esquerda -->
+                <div id="logo-final">
+                    <img src="./ims/Logo Branca s Fundo.svg" alt="">
+                </div>
+
+                <!-- Redes Sociais Direita -->
+                <div class="footer-social">
+                    <ul>
+                        <li><img src="./ims/instagram.png" alt="icone instagram"><a href="#">@atelie_do_som134</a></li>
+                        <li><img src="./ims/tiktok.png" alt="icone tik tok"><a href="#">@ateie_do_som134</a></li>
+                        <li> <img src="./ims/email.png" alt="icone email"><a href="#">ateliedosom.oficial@gmail.com</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+
+        </ul>
+        </div>
+    </section>
 </body>
 
 </html>

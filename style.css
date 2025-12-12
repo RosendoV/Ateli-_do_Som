@@ -44,7 +44,8 @@ body {
     background-color: var(--fundo_site);
 }
 
-/* HEADER======================================================================= */
+/* HEADER=========================================================================================================*/
+
 header {
     width: 100%;
     background-color: #9D5431;
@@ -63,6 +64,11 @@ header>.div.container-flex {
     margin: 0 auto;
 }
 
+.container-header{
+    display: flex;
+    padding: 60px;
+}
+
 .banner01 {
     width: 100%;
     height: 1080px;
@@ -72,14 +78,20 @@ header>.div.container-flex {
     margin-top: 80px;
 }
 
+#Logo{
+    display: flex;
+    width: 270px;
+    margin-right: 80px;
+}
+
 .links {
     display: flex;
     align-items: center;
-    gap: 85px;
+    gap: 30px;
 }
 
 .links a {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--neve);
     text-decoration: none;
 }
@@ -89,48 +101,195 @@ header>.div.container-flex {
     border-bottom: 1px solid var(--cor03);
 }
 
+
+/* Menu Hamburguer ===============================================================================================*/
 #icone-barras,
 #icone-x,
 #menu_botao {
     display: none;
 }
 
+/* SOBRE NÓS ======================================================================================================*/
 .Sobre-Nós{
-    flex-direction: column;
     text-align: center;
-}
-
-.Sobre-Nós img {
-    width: 30%;
-    border-radius: 40px;
-    height: 600px;
-    margin: 360px;
-    margin-top: 0%;
+    padding: 60px 0;
     display: flex;
-    justify-content: space-between;
+    gap: 6%;
 }
 
-.Sobre-Nós h2 {
-    font-size: 70px;
-    font-family: Bell MT, Bold;
-    color: #9D5431;
-    margin-top: 5%;
-    margin: 20px;
+.Sobre-Nós h2{
+    font-size: 89px;
+    font-family: Bell Mt, bold;
+    color: var(--caramleo);
+    margin-bottom: 30px;
 }
 
-.Sobre-Nós p {
+.Sobre-Nós img{
+    width: 550px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.Sobre-Nós p{
     font-size: 30px;
     font-family: Bell MT, regular;
     color: #000;
 }
 
-.Roda-pe{
-    background-color: #371C13;
+/* Pacotes====================================================================================================== */
+.Pacotes h2{
+    font-family: Bell Mt, bold;
+    font-size: 89px;
+    color: var(--caramleo);
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 130px;
+}
+
+.Pacotes img{
+    margin-left: 300px;
+}
+
+.Pacotes img:hover{
+    transform: translateY(-10px);
+}
+
+/* Nossos Produtos ===============================================================================================*/
+.Produtos h2{
+    font-family: Bell Mt, bold;
+    font-size: 89px;
+    color: var(--caramleo);
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 130px;
+}
+
+.Produtos img{
+    margin-left: 300px;
+}
+
+/* Nossa Loja =====================================================================================================*/
+
+#corpo{
+  grid-template-columns: 1fr 1fr; 
+  gap: 40px;
+  align-items: start;
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.Loja h2{
+    font-family: Bell Mt, bold;
+    font-size: 89px;
+    color: var(--caramleo);
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 130px;
+}
+
+.Loja h3{
     font-family: Bell MT;
-    font-size: 30px;
+    font-size: 40px;
+    color: #9D5431;
+}
+
+.Loja p{
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #000;
+
+}
+
+/* Footer */
+footer{
+    background-color: var(--marrom);
+    padding: 40px 0;
+    margin-top: 60px;
     color: var(--neve);
 }
 
-.redes-sociais img{
-    height: 60px;
+.container-footer{
+    width: 85%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
+
+#logo-final{
+    width: 100%;
+    margin-left: 90px;
+}
+
+#logo-final img{
+    width: 50%;
+}
+
+.footer-social ul{
+    list-style: none;
+    margin-right: 220px;
+}
+
+.footer-social ul li{
+    margin-bottom: 10px;
+}
+.footer-social img{
+    height: 30px;
+    margin-top:7px;
+}
+.footer-social ul li a{
+    color: var(--bege2);
+    font-size: 24px;
+    font-family: Bell MT
+}
+
+.footer-social ul li a:hover{
+    color: var(--caramelo_claro);
+}
+
+
+/* Menu Hamburguer */
+/* -------------------- Responsividade --------------- */
+
+@media screen and (max-width: 768px) {
+#sombra {
+        background-color: #9D562390;
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        right: -101vw;
+        transition: .5s;
+    }
+
+    #menu_botao {
+        display: block;
+        z-index: 1;
+    }
+
+nav.menu {
+        /* height: 100vh; */
+        width: 200px;
+        padding: 0px 30px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+
+        position: fixed;
+        top: 165px;
+        right: -210px;
+        z-index: 1;
+        transition: .5s;
+    }
+}
+
+
